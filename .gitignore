@@ -63,6 +63,9 @@ replay_pid*
 .idea/**/dictionaries
 .idea/**/shelf
 
+.idea/
+est_java.iml
+
 # AWS User-specific
 .idea/**/aws.xml
 
