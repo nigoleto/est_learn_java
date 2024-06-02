@@ -154,23 +154,40 @@ public class Test0531 {
 //    System.out.println("x는" + x);
 //    System.out.println("y는" + y);
 
-    int a = 100;
-    int b = 100;
+//    int a = 100;
+//    int b = 100;
+//
+//    System.out.println("전위 감소 연산자: " + (--a));
+//    System.out.println("후위 감소 연산자: " + (b--));
+//
+//    System.out.println("=================");
+//
+//    System.out.println("전위 감소 연산자: " + (--a));
+//    System.out.println("후위 감소 연산자: " + (b--));
+//
+//    System.out.println("=================");
+//
+//    System.out.println("전위 감소 연산자: " + (--a));
+//    System.out.println("후위 감소 연산자: " + (b--));
 
-    System.out.println("전위 감소 연산자: " + (--a));
-    System.out.println("후위 감소 연산자: " + (b--));
+    // ________________________
 
-    System.out.println("=================");
+    boolean isRaining = true;
 
-    System.out.println("전위 감소 연산자: " + (--a));
-    System.out.println("후위 감소 연산자: " + (b--));
+    if(isRaining){
+      System.out.println("하늘에서 비가와요");
+    }
+    if(!isRaining){
+      System.out.println(" 비가 안와요 ");
+    }
 
-    System.out.println("=================");
+    boolean isSunny =false;
 
-    System.out.println("전위 감소 연산자: " + (--a));
-    System.out.println("후위 감소 연산자: " + (b--));
-
-
+    if(!isSunny){
+      System.out.println("날씨가 맑아요");
+    } else{
+      System.out.println("집에서 쉽니다.");
+    }
 
   }
 }
