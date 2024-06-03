@@ -72,58 +72,58 @@ public class Test0603_switch {
 
     //    ______________________________________
 
-//    String color = "red";
-//
-//    switch (color) {
-//      case "red":
-//        System.out.println("Apple");
-//        break;
-//      case "green":
-//        System.out.println("Grass");
-//        break;
-//      case "blue":
-//        System.out.println("Sky");
-//        break;
-//    }
+    //    String color = "red";
+    //
+    //    switch (color) {
+    //      case "red":
+    //        System.out.println("Apple");
+    //        break;
+    //      case "green":
+    //        System.out.println("Grass");
+    //        break;
+    //      case "blue":
+    //        System.out.println("Sky");
+    //        break;
+    //    }
 
     //    ______________________________________
 
-    int score = 80;
-
-    switch (score / 10) {
-      case 10,9:
-        System.out.println("A");
-        break;
-      case 8:
-        System.out.println("B");
-        break;
-      case 7:
-        System.out.println("C");
-        break;
-      case 6:
-        System.out.println("D");
-        break;
-      default:
-        System.out.println("F");
-    }
+    //    int score = 80;
+    //
+    //    switch (score / 10) {
+    //      case 10,9:
+    //        System.out.println("A");
+    //        break;
+    //      case 8:
+    //        System.out.println("B");
+    //        break;
+    //      case 7:
+    //        System.out.println("C");
+    //        break;
+    //      case 6:
+    //        System.out.println("D");
+    //        break;
+    //      default:
+    //        System.out.println("F");
+    //    }
 
     //    ______________________________________
 
-    String language = "Java";
-
-    switch(language){
-      case "Java":
-        System.out.println("Java입니다.");
-        break;
-      case "Python":
-        System.out.println("Python입니다.");
-        break;
-      case "C++":
-        System.out.println("C++입니다.");
-        break;
-      case "JavaScript":
-        System.out.println("JavaScript입니다.");
-        break;
-    }
+    //   String language = "Java";
+    //
+    //    switch(language){
+    //      case "Java":
+    //        System.out.println("Java입니다.");
+    //        break;
+    //      case "Python":
+    //        System.out.println("Python입니다.");
+    //        break;
+    //      case "C++":
+    //        System.out.println("C++입니다.");
+    //        break;
+    //      case "JavaScript":
+    //        System.out.println("JavaScript입니다.");
+    //        break;
+    //    }
   }
 }
