@@ -139,16 +139,50 @@ public class For {
     //      }
     //    }
 
+    //    -----------------------
+
+    //    for (int i = 1; i < 11; i++) {
+    //      if (i == 4 || i == 7) continue;
+    //      System.out.println(i);
+    //    }
 
     //    -----------------------
 
-//    for (int i = 1; i < 11; i++) {
-//      if (i == 4 || i == 7) continue;
-//      System.out.println(i);
+    //    int[] scores = {1,30,20,80,15,20,30,22};
+    //    int sum = 0;
+    //
+    //    for(int i: scores){
+    //      sum += i;
+    //    };
+    //
+    //    double avg = (double) sum / scores.length;
+    //
+    //    System.out.println(sum);
+    //    System.out.println(avg);
+
+    //    -----------------------
+
+//    String[] names = {"okay2", "asbds", "good2", "ormiiiii", "abcde"};
+//    for (String str : names) {
+//      if (str.length() >= 5) {
+//        System.out.println(str);
+//      }
 //    }
 
-    //    -----------------------
+//    int count = 1;
+//
+//    while(true){
+//      if(count == 10) break;
+//      count++;
+//    }
+//    System.out.println(count);
 
-
+    for(int i = 9; i > 1; i--){
+      System.out.printf("-------%d단-------%n",i);
+      for(int j = 9; j > 0; j--){
+        System.out.printf("%d x %d = %d%n",i, j, i*j);
+      }
+    }
   }
+
 }
