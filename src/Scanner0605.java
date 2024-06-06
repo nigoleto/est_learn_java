@@ -48,67 +48,67 @@ public class Scanner0605 {
 
     //    -------------------- Q2)
 
-//        Scanner scanner = new Scanner(System.in);
-//
-//        Random random = new Random();
-//        int targetNumber = random.nextInt(100) + 1;
-//
-//
-//        while(true){
-//          System.out.println("랜덤생성된 숫자를 맞춰보세요.");
-//          int guessNum = scanner.nextInt();
-//
-//          if (guessNum > targetNumber) {
-//            System.out.println("입력한 숫자가 랜덤숫자보다 큽니다.");
-//          } else if (guessNum < targetNumber) {
-//            System.out.println("입력한 숫자가 랜덤숫자보다 작습니다.");
-//          } else {
-//            System.out.printf("정답입니다!! 랜덤숫자는 %d입니다!",targetNumber);
-//            break;
-//          }
-//        }
-//
-//        scanner.close();
+    //        Scanner scanner = new Scanner(System.in);
+    //
+    //        Random random = new Random();
+    //        int targetNumber = random.nextInt(100) + 1;
+    //
+    //
+    //        while(true){
+    //          System.out.println("랜덤생성된 숫자를 맞춰보세요.");
+    //          int guessNum = scanner.nextInt();
+    //
+    //          if (guessNum > targetNumber) {
+    //            System.out.println("입력한 숫자가 랜덤숫자보다 큽니다.");
+    //          } else if (guessNum < targetNumber) {
+    //            System.out.println("입력한 숫자가 랜덤숫자보다 작습니다.");
+    //          } else {
+    //            System.out.printf("정답입니다!! 랜덤숫자는 %d입니다!",targetNumber);
+    //            break;
+    //          }
+    //        }
+    //
+    //        scanner.close();
 
     //    -------------------- Q3)
 
-//    Scanner sc = new Scanner(System.in);
-//    int getNumber;
-//
-//    while (true) {
-//      System.out.println("원하는 기능을 선택하세요: ");
-//      System.out.println(" 1. 덧셈 / 2. 뺄셈 / 3. 곱셈 / 4. 나눗셈 / 0. 종료 ");
-//      getNumber = sc.nextInt();
-//      if (getNumber == 0) {
-//        System.out.println("계산기를 종료합니다.");
-//        break;
-//      }else if(getNumber > 4 || getNumber < 0){
-//        System.out.println("잘못된 값을 입력하셨습니다.");
-//      }
-//      else{
-//        System.out.println("첫번째 값을 입력하고 엔터를 누르세요.");
-//        int Num1 = sc.nextInt();
-//        System.out.println("두번째 값을 입력하고 엔터를 누르세요.");
-//        int Num2 = sc.nextInt();
-//
-//        switch (getNumber) {
-//          case 1:
-//            System.out.println(Num1 + " + " + Num2 + " = " + (Num1 + Num2));
-//            break;
-//          case 2:
-//            System.out.println(Num1 + " - " + Num2 + " = " + (Num1 - Num2));
-//            break;
-//          case 3:
-//            System.out.println(Num1 + " x " + Num2 + " = " + (Num1 * Num2));
-//            break;
-//          case 4:
-//            System.out.println(Num1 + " / " + Num2 + " = " + (Num1 / Num2));
-//            break;
-//          default:
-//            System.out.println("잘못된 번호를 입력하셨습니다.");
-//        }
-//      }
-//    }
+    //    Scanner sc = new Scanner(System.in);
+    //    int getNumber;
+    //
+    //    while (true) {
+    //      System.out.println("원하는 기능을 선택하세요: ");
+    //      System.out.println(" 1. 덧셈 / 2. 뺄셈 / 3. 곱셈 / 4. 나눗셈 / 0. 종료 ");
+    //      getNumber = sc.nextInt();
+    //      if (getNumber == 0) {
+    //        System.out.println("계산기를 종료합니다.");
+    //        break;
+    //      }else if(getNumber > 4 || getNumber < 0){
+    //        System.out.println("잘못된 값을 입력하셨습니다.");
+    //      }
+    //      else{
+    //        System.out.println("첫번째 값을 입력하고 엔터를 누르세요.");
+    //        int Num1 = sc.nextInt();
+    //        System.out.println("두번째 값을 입력하고 엔터를 누르세요.");
+    //        int Num2 = sc.nextInt();
+    //
+    //        switch (getNumber) {
+    //          case 1:
+    //            System.out.println(Num1 + " + " + Num2 + " = " + (Num1 + Num2));
+    //            break;
+    //          case 2:
+    //            System.out.println(Num1 + " - " + Num2 + " = " + (Num1 - Num2));
+    //            break;
+    //          case 3:
+    //            System.out.println(Num1 + " x " + Num2 + " = " + (Num1 * Num2));
+    //            break;
+    //          case 4:
+    //            System.out.println(Num1 + " / " + Num2 + " = " + (Num1 / Num2));
+    //            break;
+    //          default:
+    //            System.out.println("잘못된 번호를 입력하셨습니다.");
+    //        }
+    //      }
+    //    }
 
     //    -------------------- Q4)
 
@@ -144,12 +144,11 @@ public class Scanner0605 {
     //      System.out.print("[" + data + "] ");
     //    }
 
-
     //    -------------------- Q5)
 
     Scanner sc = new Scanner(System.in);
 
-    while(true){
+    while (true) {
 
       System.out.println("영화 제목을 입력하세요");
       String titleMovie = sc.next();
@@ -161,21 +160,19 @@ public class Scanner0605 {
       String phoneNumber = sc.next();
 
       System.out.println("===== 영화 티켓 예매 정보 =====");
-      System.out.println("영화 제목: [" + titleMovie +"]");
-      System.out.println("관람 인원: [" + howManyPeople +"]명");
-      System.out.println("예매자 이름: [" + name +"]");
-      System.out.println("예매자 전화번호: [" + phoneNumber +"]");
+      System.out.println("영화 제목: [" + titleMovie + "]");
+      System.out.println("관람 인원: [" + howManyPeople + "]명");
+      System.out.println("예매자 이름: [" + name + "]");
+      System.out.println("예매자 전화번호: [" + phoneNumber + "]");
       System.out.println("============================");
       System.out.println("예매 정보가 정확하다면 YES 를, 아니라면 NO 를 입력해주세요.");
       String answer = sc.next();
 
-      if(answer.toUpperCase().equals("YES")){
+      if (answer.toUpperCase().equals("YES")) {
         System.out.println("======== 총 결제 금액 ========");
         System.out.println("총 결제 금액: [" + howManyPeople * 10000 + "]원 입니다.");
         break;
       }
     }
-
-
   }
 }
