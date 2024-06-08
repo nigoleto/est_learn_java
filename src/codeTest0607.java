@@ -86,6 +86,19 @@ public class codeTest0607 {
             }
         }
 
+
+
+    public static void printChar(String str) {
+        char[] arr = str.toCharArray();
+
+        for (char i : arr) {
+            System.out.println(i);
+        }
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println(arr[i]);
+        }
+    }
 //    -----------------------------------------------------
 
 //    public static void main(String[] args) {
