@@ -143,13 +143,13 @@ public class codeTest0610 {
     return result;
   }
 
-  public static String starSideDel(String str) {
     //    int firstStar = str.indexOf("*")-1;
     //    int lastStar = str.lastIndexOf("*")+2;
     //
     //    return str.substring(0, firstStar) + str.substring(lastStar);
     //
     //    "12y**x34a***b5"
+  public static String starSideDel(String str) {
     String result = "";
     char[] arr = str.toCharArray();
 
