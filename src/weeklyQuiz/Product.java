@@ -15,9 +15,6 @@ public class Product {
     return productPrice;
   }
 
-  public String getProductName() {
-    return productName;
-  }
 
   public String getProductCount() {
     return productCount;
