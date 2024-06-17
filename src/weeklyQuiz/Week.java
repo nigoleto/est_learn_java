@@ -5,10 +5,26 @@ import java.util.Date;
 
 public class Week {
 
-    public static void main(String[] args){
-        LocalDate now = LocalDate.now();
-        Date now2 = new Date();
-    System.out.println(now);
-    System.out.println(now2);
+  public static void main(String[] args) {
+    LocalDate customDate = LocalDate.of(2024, 6, 27);
+
+    Product product1 = new Food("apple", 5, 20000, customDate);
+    Product product2 = new Food("banana", 30, 4000, customDate);
+    Product product3 = new Clothing("newJean", 20, 10000, "l");
+    Product product4 = new Clothing("shirt", 10, 15000, "xxl");
+    Product product5 = new Electronics("phone", 50, 400000, "SAMSUNG");
+    Product product6 = new Electronics("moniter", 50, 300000, "Apple");
+
+    ShoppingMall shoppingMall = new ShoppingMall(5);
+
+    shoppingMall.controlProduct(product1);
+    shoppingMall.controlProduct(product2);
+    shoppingMall.controlProduct(product3);
+    shoppingMall.controlProduct(product4);
+    shoppingMall.controlProduct(product5);
+    shoppingMall.controlProduct();
+
+    shoppingMall.controlProduct(2);
+    shoppingMall.controlProduct();
   }
 }

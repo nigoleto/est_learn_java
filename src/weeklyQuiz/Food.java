@@ -1,26 +1,24 @@
 package weeklyQuiz;
 
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
+import java.time.temporal.ChronoUnit;
 
 public class Food extends Product {
-    Calendar cal = Calendar.getInstance();
 
+  LocalDate expirationDate;
 
-    LocalDate now = LocalDate.now();
-    Date expirationDate;
-
-  public Food(String productName, String productCount, int productPrice, Date expirationDate) {
+  public Food(String productName, int productCount, int productPrice, LocalDate expirationDate) {
     super(productName, productCount, productPrice);
     this.expirationDate = expirationDate;
   }
 
-    @Override
-    public double calculatePrice() {
-        if (now.equals(expirationDate)) {
-            return productPrice * 1.2;
-        }
-        return productPrice;
+  LocalDate today = LocalDate.now();
+
+  @Override
+  public double calculatePrice() {
+    if (ChronoUnit.DAYS.between(today, expirationDate) <= 7) {
+      return productPrice * 0.8;
     }
+    return productPrice;
+  }
 }

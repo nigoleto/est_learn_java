@@ -2,10 +2,10 @@ package weeklyQuiz;
 
 public class Product {
   String productName;
-  String productCount;
+  int productCount;
   double productPrice;
 
-  public Product(String productName, String productCount, double productPrice) {
+  public Product(String productName, int productCount, double productPrice) {
     this.productName = productName;
     this.productCount = productCount;
     this.productPrice = productPrice;
@@ -19,8 +19,7 @@ public class Product {
     return productName;
   }
 
-  public String getProductCount() {
+  public int getProductCount() {
     return productCount;
   }
-
 }

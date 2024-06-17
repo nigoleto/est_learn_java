@@ -1,3 +1,5 @@
 package ormi0614;
 
-public interface Herbivore {}
+public interface Herbivore {
+    String getFood();
+}
