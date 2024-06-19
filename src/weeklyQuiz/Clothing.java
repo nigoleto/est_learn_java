@@ -1,27 +1,22 @@
 package weeklyQuiz;
 
 public class Clothing extends Product {
-  String clothingSize;
+  private String clothingSize;
 
-  public Clothing(String productName, int productCount, double productPrice, String clothingSize) {
-    super(productName, productCount, productPrice);
+  public Clothing(String name, int stock, double price, String clothingSize) {
+    super(name, stock, price);
     this.clothingSize = clothingSize;
   }
 
   @Override
   public double calculatePrice() {
-    //    if (clothingSize > 3) {
-    //      return productPrice * 1.1;
-    //    }
-    //    return productPrice;
-
     //      return switch (clothingSize.toUpperCase()) {
-    //          case "L", "XL", "XXL" -> productPrice * 1.1;
-    //          default -> productPrice;
+    //          case "L", "XL", "XXL" -> price * 1.1;
+    //          default -> price;
     //      };
     if (clothingSize.toUpperCase().contains("L")) {
-      return productPrice * 1.1;
+      return getPrice() * 1.1;
     }
-    return productPrice;
+    return getPrice();
   }
 }

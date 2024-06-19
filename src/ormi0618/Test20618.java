@@ -17,17 +17,13 @@ public class Test20618 {
     // ---------------------------------------
 
     List<String> arrayList = new ArrayList<>();
-    arrayList.add("홍길동0");
-    arrayList.add("홍길동1");
-    arrayList.add("홍길동2");
-    arrayList.add("홍길동3");
-    arrayList.add("홍길동4");
+    arrayList.add("Java");
+    arrayList.add("Spring");
+    arrayList.add("Servlet/JSP");
+    arrayList.add("DBMS");
+    arrayList.add("JPA");
 
-    arrayList.remove("홍길동2");
-
-//    for (String str : arrayList) {
-//      System.out.println(str);
-//    }
+    System.out.println("총 객체수: " + arrayList.size());
 
     System.out.println(arrayList.get(2));
 

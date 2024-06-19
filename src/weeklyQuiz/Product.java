@@ -1,25 +1,41 @@
 package weeklyQuiz;
 
 public class Product {
-  String productName;
-  int productCount;
-  double productPrice;
+  private String name;
+  private int stock;
+  private double price;
 
-  public Product(String productName, int productCount, double productPrice) {
-    this.productName = productName;
-    this.productCount = productCount;
-    this.productPrice = productPrice;
+  public Product(String name, int stock, double price) {
+    this.name = name;
+    this.stock = stock;
+    this.price = price;
   }
 
   public double calculatePrice() {
-    return productPrice;
+    return price;
   }
 
-  public String getProductName() {
-    return productName;
+  public double getPrice() {
+    return price;
   }
 
-  public int getProductCount() {
-    return productCount;
+  public String getName() {
+    return name;
+  }
+
+  public int getStock() {
+    return stock;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setStock(int stock) {
+    this.stock = stock;
+  }
+
+  public void setPrice(double price) {
+    this.price = price;
   }
 }

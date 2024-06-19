@@ -1,19 +1,18 @@
 package weeklyQuiz;
 
 public class Electronics extends Product {
-  String electronicsBrand;
+  private String brand;
 
-  public Electronics(
-      String productName, int productCount, int productPrice, String electronicsBrand) {
-    super(productName, productCount, productPrice);
-    this.electronicsBrand = electronicsBrand;
+  public Electronics(String name, int stock, int price, String brand) {
+    super(name, stock, price);
+    this.brand = brand;
   }
 
   @Override
   public double calculatePrice() {
-    if (electronicsBrand.equalsIgnoreCase("APPLE")) {
-      return productPrice * 1.2;
+    if (brand.equalsIgnoreCase("APPLE")) {
+      return getPrice() * 1.2;
     }
-    return productPrice;
+    return getPrice();
   }
 }
