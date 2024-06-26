@@ -4,17 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookShelf<T> implements BookManager<T> {
+
+  // -------- 필드 & 생성자 & Getter
   private List<Book<T>> books;
 
   public BookShelf() {
     this.books = new ArrayList<>();
   }
 
-    public List<Book<T>> getBooks() {
-        return books;
-    }
+  public List<Book<T>> getBooks() {
+    return books;
+  }
 
-    @Override
+
+  // -------- 인터페이스 메서드 구현
+  @Override
   public void addBook(Book<T> book) {
     books.add(book);
   }
@@ -38,13 +42,13 @@ public class BookShelf<T> implements BookManager<T> {
   }
 
   @Override
-  public List<Book<T>> searchByAuthor(String author) { // 이거랑 제목서치랑 함친 메서드 만들수 잇을듯?
-      List<Book<T>> searchByAuthorList = new ArrayList<>();
-      for (int i = 0; i < books.size(); i++) {
-          if (books.get(i).getAuthor().toUpperCase().contains(author.toUpperCase())) {
-              searchByAuthorList.add(books.get(i));
-          }
+  public List<Book<T>> searchByAuthor(String author) {
+    List<Book<T>> searchByAuthorList = new ArrayList<>();
+    for (int i = 0; i < books.size(); i++) {
+      if (books.get(i).getAuthor().toUpperCase().contains(author.toUpperCase())) {
+        searchByAuthorList.add(books.get(i));
       }
-      return searchByAuthorList;
+    }
+    return searchByAuthorList;
   }
 }
